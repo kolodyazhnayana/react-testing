@@ -37,7 +37,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     }
 }
 
-const TodoInner = ({todo, user}: {todo: ITodos, user: IUser}) => {
+const TodoDetail = ({todo, user}: {todo: ITodos, user: IUser}) => {
     const {title, completed, id} = todo
     const {name} = user
 
@@ -61,4 +61,4 @@ const TodoInner = ({todo, user}: {todo: ITodos, user: IUser}) => {
     )
 }
 
-export default TodoInner
+export default TodoDetail
