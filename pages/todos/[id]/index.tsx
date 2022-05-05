@@ -10,6 +10,8 @@ import {actionGetPosts} from "@store/actions/actions"
 import {AppState} from "@store/store"
 import {getTodo, getTodos, getUser} from "../../../api"
 
+//test-dupl
+
 export const getStaticPaths: GetStaticPaths = async () => {
     const todos = await getTodos()
     const paths = todos?.data.map((todo: ITodos) => ({
