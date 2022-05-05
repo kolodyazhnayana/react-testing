@@ -4,7 +4,7 @@ import { wrapper, store } from "@store/store"
 import { Provider } from "react-redux"
 import 'nprogress/nprogress.css'
 
-function MyApp({ Component, pageProps }: AppProps) {
+function AppPage({ Component, pageProps }: AppProps) {
     console.log('from app')
 
     return (
@@ -14,4 +14,4 @@ function MyApp({ Component, pageProps }: AppProps) {
     )
 }
 
-export default wrapper.withRedux(MyApp)
+export default wrapper.withRedux(AppPage)
