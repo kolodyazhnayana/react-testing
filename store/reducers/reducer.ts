@@ -2,8 +2,10 @@ import {StoreInitial} from "../storeInitial"
 import {CHANGE_FILTERS, SET_FILTERS, SET_POSTS, SET_TODOS} from "../actionTypes"
 import {IAction} from "@type/IActions"
 import {FiltersHelper} from "@helpers/FiltersHelper"
+import {Reducer} from "redux"
+import {IStoreInitial} from "@type/IStoreInitial"
 
-const reducer = (state = StoreInitial, action: IAction) => {
+const reducer: Reducer<IStoreInitial | undefined, IAction> = (state = StoreInitial, action: IAction) => {
      switch (action.type) {
         case SET_TODOS:
         case SET_FILTERS:
